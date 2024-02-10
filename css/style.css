@@ -1,0 +1,175 @@
+/* Hier können Sie zusätzliche Anpassungen vornehmen */
+.navbar {
+    background: linear-gradient(15deg, #FFD700, #FFFFE0, #FFD700, #FFFFE0, #FFD700); /* Schräger Farbverlauf mit Gold und sehr hellem Gelb */
+    border: none; /* Entfernt mögliche Standardränder */
+    min-height: 80px; /* Setzt eine Mindesthöhe für die Navbar */
+    align-items: flex-end; /* Richtet Inhalte am unteren Rand aus */
+    display: flex; /* Ermöglicht die Flex-Box-Ausrichtung */
+}
+
+.navbar-brand, .nav-link, .navbar-text {
+    font-weight: bold; /* Text fett */
+    color: #333; /* Dunkle Farbe für Text */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml, ..."); /* Pfad zu Ihrem Hamburger-Icon */
+}
+
+/* Stellt sicher, dass das Suchformular den verfügbaren Platz einnimmt und am unteren Rand ausgerichtet ist */
+.form-inline {
+    flex-grow: 1; /* Suchfeld nimmt verfügbaren Platz ein */
+    align-self: flex-end; /* Richtet das Suchformular am unteren Rand aus */
+}
+
+.nav-tabs .nav-link {
+    background-color: #FFFFFF; /* Weißer Hintergrund für alle Tabs */
+    border: 1px solid #D4AF37; /* Goldene Umrahmung */
+    color: #333; /* Dunkle Textfarbe für besseren Kontrast */
+}
+
+/* Entfernt den unteren Rand des aktiven Tabs, um den Effekt einer zusammenhängenden Einheit mit dem Tab-Inhalt zu erzeugen */
+.nav-tabs .nav-link.active {
+    border-bottom-color: transparent; /* Macht den unteren Rand des aktiven Tabs transparent */
+}
+
+/* Zusätzliche Anpassungen für Hover-Effekte, falls gewünscht */
+.nav-tabs .nav-link:hover {
+    background-color: #f8f8f8; /* Leicht grauer Hintergrund beim Hover für Feedback */
+    border-color: #D4AF37; /* Hält die goldene Umrahmung konsistent */
+}
+
+/* Passt die Navbar-Nav an, um die vertikale Ausrichtung zu erzwingen */
+.navbar-nav {
+    align-items: flex-end; /* Richtet die Links am unteren Rand aus */
+    height: 100%; /* Ermöglicht es, die gesamte Höhe der Navbar zu nutzen */
+}
+
+
+
+
+.form-inline {
+    display: flex;
+    width: 100%;
+    max-width: 680px; /* Stellt die Breite des Formulars ein */
+    flex-grow: 1;
+}
+
+.custom-search-input {
+    flex-grow: 1;
+    border-radius: 0.25rem;
+    margin-right: -1px; /* Korrigiert den Abstand zwischen Eingabefeld und Button */
+}
+
+.custom-search-button {
+    border-radius: 0.25rem;
+}
+
+.custom-nav-link {
+    color: black !important;
+}
+
+/* Stellt sicher, dass die Navigationselemente nicht ineinander übergehen */
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: 1rem;
+    }
+}
+.custom-search-input {
+    flex-grow: 1;
+    border-radius: 0.25rem;
+    margin-right: 12px; /* Korrigiert den Abstand zwischen Eingabefeld und Button */
+    background-color: transparent; /* Macht das Eingabefeld durchsichtig */
+    border: 1px solid #ced4da; /* Passt die Rahmenfarbe an, optional */
+}
+
+/* Stil für den Suchen-Button im Normalzustand */
+.custom-search-button {
+    background-color: #343a40; /* Anthrazitfarbener Hintergrund */
+    color: white; /* Weiße Textfarbe für den Button */
+    border-radius: 20px; /* Stärker abgerundete Ecken für einen modernen Look */
+    border: none; /* Entfernt den Standardrahmen */
+    padding: 0.5rem 1.5rem; /* Erhöht den Innenabstand, macht den Button breiter */
+    transition: background-color 0.3s, color 0.3s; /* Glatter Übergang für die Farbänderung */
+}
+
+
+/* Verbessert die Sichtbarkeit des Platzhaltertexts im durchsichtigen Suchfeld */
+.custom-search-input::placeholder {
+    color: #000000; /* Dunkelgrauer Platzhaltertext, optional */
+}
+
+
+/* Stil für den Suchen-Button, wenn er ausgewählt/fokussiert ist */
+.custom-search-button:focus {
+    background-color: transparent; /* Macht den Hintergrund des Buttons transparent */
+    color: #343a40; /* Ändert die Textfarbe des Buttons zu Anthrazit */
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); /* Fügt einen Fokusschatten hinin */
+}
+
+/* Stil für den Suchen-Button, wenn die Maus darüber schwebt */
+.custom-search-button:hover {
+    background-color: #23272b; /* Etwas hellerer Anthrazitton beim Überfahren */
+    color: white; /* Weiße Textfarbe beibehalten */
+}
+
+
+
+
+
+
+.carousel-container {
+    width: 75%; /* Breite des Carousels auf 50% der Fensterbreite setzen */
+    margin: 40px auto; /* Fügt oben und unten mehr Abstand hinzu und zentriert das Carousel */
+    overflow: hidden; /* Verhindert, dass Inhalte außerhalb des Containers angezeigt werden */
+}
+
+.carousel-inner img {
+    width: 100%; /* Stellt sicher, dass Bilder die Breite des Containers einnehmen */
+    max-height: 400px; /* Passt die Höhe der Bilder an */
+    object-fit: contain; /* Verhindert, dass Bilder abgeschnitten werden */
+    margin: auto; /* Zentriert Bilder vertikal, wenn sie kleiner als der maximale Container sind */
+}
+
+.carousel-inner img {
+    width: 100%; /* Stellt sicher, dass Bilder die Breite des Containers einnehmen */
+    max-height: 400px; /* Passt die Höhe der Bilder an */
+    object-fit: contain; /* Verhindert, dass Bilder abgeschnitten werden */
+    margin: auto; /* Zentriert Bilder vertikal, wenn sie kleiner als der maximale Container sind */
+}
+
+/* Hintergrundfarbe auf Anthrazit setzen */
+body {
+    background-color: #29313b; /* Anthrazit */
+}
+.footer a.text-light:hover {
+    color: #FFD700; /* Farbe wechselt zu Gold beim Hover */
+}
+
+/* Optional: Anpassung der Abstände und Feinheiten */
+.footer ul {
+    padding-left: 0; /* Entfernt den Standard-Linken Abstand */
+}
+
+.footer li {
+    margin-bottom: 10px; /* Fügt Abstand zwischen den Listenelementen hinzu */
+}
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Begrenzt den Text auf zwei Zeilen */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Abstand zwischen den Zeilen mit Büchern */
+.row:first-child .col {
+    margin-bottom: 20px; /* Fügt einen Abstand von 20px unter der ersten Zeile hinzu */
+}
+.book-cover {
+    width: 50%; /* Reduziert die Breite des Bildes auf 50% seiner ursprünglichen Größe */
+    height: auto; /* Stellt sicher, dass das Seitenverhältnis des Bildes erhalten bleibt */
+}
